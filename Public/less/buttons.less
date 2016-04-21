@@ -1,0 +1,81 @@
+.btn,
+a.btn {
+	display: inline-block;
+	padding: @padding-button;
+	cursor: pointer;
+	margin: 0 4px;
+	text-align: center;
+	color: white;
+	font-size: @size*.8;
+	transition-duration:.3s;
+	border-radius: 2px;
+	text-decoration: none;
+	&.btn-primary {
+		background: @color-primary;
+		&:hover {
+			background: lighten(@color-primary, 10%);
+		}
+	}
+	&.btn-success {
+		background: @color-success;
+		&:hover {
+			background: darken(@color-success, 10%);
+		}
+	}
+	&.btn-info {
+		background: @color-info;
+		&:hover {
+			background: darken(@color-info, 10%);
+		}
+	}
+	&.btn-warning {
+		background: @color-warning;
+		&:hover {
+			background: darken(@color-warning, 10%);
+		}
+	}
+	&.btn-danger {
+		background: @color-danger;
+		&:hover {
+			background: darken(@color-danger, 10%);
+		}
+	}
+	&.btn-orange {
+		background: @color-orange;
+		&:hover {
+			background: darken(@color-orange, 10%);
+		}
+	}
+	&.btn-default {
+		color: #b1b1b1;
+		border: @border;
+		border-color: rgba(255,255,255,0.3);
+		&:hover {
+			background: white;
+			color: #444;
+		}
+	}
+	&.btn-addon {
+		padding: 0;
+		overflow: hidden;
+		.addon,
+		.text {
+			float: left;
+		}
+		.addon {
+			background: rgba(0,0,0,0.3);
+			padding: 11px;
+			color: white;
+		}
+		.text {
+			padding: 11px;
+		}
+	}
+	&.btn-uppercase {
+		text-transform: uppercase;
+		font-size: @size*.72;
+	}
+	&.btn-sm {
+		padding: 6px 8px;
+	}
+}

@@ -1,0 +1,39 @@
+html {
+	overflow: hidden;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	background: @background;
+	color: @color-text;
+	font-family: @font-family;
+	font-size: @size;
+	min-height: 100%;
+	white-space: nowrap;
+}
+.container {
+	max-width: 100%;
+	display: block;
+	padding: @padding-container;
+	word-wrap: break-word;
+	box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.main {
+	display: block;
+	width: @width-main;
+	float: left;
+	height: 100%;
+	white-space: normal;
+	> .heading {
+		padding: @padding-navbar*.7 40px;
+		border-bottom: @border;
+		font-size: @size*1.65;
+		font-weight: 100;
+	}
+}

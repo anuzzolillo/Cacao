@@ -1,0 +1,98 @@
+.navbar {
+	.nav-heading {
+		padding: @padding-navbar;
+		color: @color-navbar;
+		font-weight: bold;
+		border-bottom: @border-navbar;
+		.slim {
+			font-weight: 100;
+			color: #2A688E;
+		}
+		.fa {
+			float: right;
+			position: relative;
+			top: 2px;
+			color: rgba(255,255,255,0.4);
+			cursor: pointer;
+			font-size: @size*.8rem;
+			transition-duration:.3s;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+	.nav {
+		display: block;
+	}
+	.nav > li {
+		display: block;
+		&.active a {
+			background: @background;
+			color: @color-text;
+			&:hover {
+				background: @background;
+				color: @color-text;
+			}
+		}
+	}
+	.nav > li > a {
+		display: block;
+		padding: @padding-navbar;
+		color: @color-navbar;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: @size-navbar;
+		letter-spacing: @size*.01;
+		transition-duration: .3s;
+		&:hover {
+			background: darken(@background-aside, 5%);
+		}
+		.fa {
+			font-size: @size-navbar*1.2;
+			margin-right: .3rem;
+		}
+	}
+}
+.subnav {
+	display: inline-block;
+	float: right;
+	.nav {
+		list-style: none;
+		li {
+			display: inline-block;
+			padding: 0 7px;
+			a {
+				color: inherit;
+				.fa {
+					font-size: @size*.8;
+				}
+			}
+		}
+		.alert {
+			display: inline-block;
+			float: right;
+			cursor: pointer;
+			position: relative;
+			top: 8px;
+			right: 7px;
+			> .value {
+				position: absolute;
+				top: -6px;
+				right: -10px;
+				min-height: 24px;
+				min-width: 24px;
+				line-height: 23px;
+				background: @color-info;
+				color: white;
+				text-align: center;
+				font-size: @size*.5;
+				font-weight: bold;
+				.border-radius(20px);
+				transition-duration:.3s;
+				&:hover {
+					background: lighten(@color-info, 10%);
+				}
+			}
+		}
+	}
+}

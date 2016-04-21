@@ -1,0 +1,50 @@
+.notification {
+	display: table;
+	width: 100%;
+	position: relative;
+	color: rgba(255,255,255,0.9);
+	min-height: 40px;
+	font-size: @size*.9;
+	margin-bottom: 10px;
+	z-index: 100;
+	p {
+		text-align: justify;
+	}
+	.inner {
+		padding: @padding-notification;
+	}
+	.close {
+		position: absolute;
+		top: 5px;
+		right: 9px;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: @size;
+	}
+	&.notification-primary {
+		background: @background-aside;
+	}
+	&.notification-info {
+		background: @color-info;
+	}
+	&.notification-success {
+		background: @color-success;
+	}
+	&.notification-warning {
+		background: @color-warning;
+	}
+	&.notification-danger {
+		background: @color-danger;
+	}
+	&.notification-condensed .inner {
+		padding: @padding-notification-condensed;
+	}
+	&.notification-fixed {
+		position: fixed;
+		min-width: 300px;
+		width: auto;
+		bottom: 0;
+		right: 10px;
+		z-index: 2;
+	}
+}
