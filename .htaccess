@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^content content.php
+RewriteRule ^users users.php
+RewriteRule ^stats stats.php
+RewriteRule ^files files.php
+RewriteRule ^settings settings.php
+RewriteRule ^login login.php
+RewriteRule ^about about.php
